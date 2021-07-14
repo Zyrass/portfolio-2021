@@ -5,11 +5,11 @@ const Navbar = () => {
         <nav>
             <span>Alain Guillon </span>
             <ul>
-                <li><a href="">Accueil</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">A Propos</a></li>
-                <li><a href="">Contact</a></li>
+                <li>Accueil</li>
+                <li>Projects</li>
+                <li>Services</li>
+                <li>A Propos</li>
+                <li>Contact</li>
             </ul>
         </nav>
     )

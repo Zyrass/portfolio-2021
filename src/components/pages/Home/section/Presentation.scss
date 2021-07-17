@@ -1,14 +1,13 @@
 @import "../../../../assets/styles/color";
 
 .container__left {
-    padding: 40px;
+    padding: 30px;
     max-width: 50%;
-    margin-right: 100px;
 
     h1 {
-        font-size: 6em;
+        font-size: 5em;
         color: $red;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
         filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
     }
     p {
@@ -65,3 +64,19 @@
     }
 }
 
+.container__info {
+    width: 100vw;
+    background-color: $red;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    div {
+        padding: 20px;
+        span, address {
+            font-weight: 700;
+            color: darken($blue, 10%);
+            font-size: 1.4rem;
+        }
+    }
+}

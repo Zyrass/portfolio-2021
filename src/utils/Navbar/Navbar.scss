@@ -7,7 +7,7 @@ nav {
     background-color: darken($dark, 5);
     color: $white;
     height: 65px;
-    border-bottom: 1px solid rgb(254, 128, 182);
+    border-bottom: 1px solid $red;
 
     display: flex;
     align-items: center;
@@ -35,6 +35,13 @@ nav {
                 transition: all .7s ease-in-out;
                 font-size: 1.2em;
                 &:hover {
+                    background-color: $red;
+                    color: $dark;
+                }
+            }
+
+            &:active {
+                a {
                     background-color: $red;
                     color: $dark;
                 }

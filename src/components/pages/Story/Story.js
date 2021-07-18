@@ -7,7 +7,7 @@ import "./Story.scss"
 function Story() {
 
   // Etats
-  const [qualities] = useState([]);
+  // const [qualities] = useState([]);
   const [asideStatus] = useState(true);
 
   // Méthodes

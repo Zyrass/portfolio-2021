@@ -19,7 +19,15 @@ function Story() {
 
   // Méthodes
   const addQuality = ( textQuality: string ): void  => {
-    setQualities( prevQualities => [...qualities, textQuality])
+    setQualities( () => {
+
+      const checkStringExist = qualities.find( text => text === textQuality )
+      if ( !checkStringExist ) {
+        return [...qualities, textQuality]
+      } else {
+        return qualities
+      }
+    })
   }
 
   const clearQualities = ($e: any) => {

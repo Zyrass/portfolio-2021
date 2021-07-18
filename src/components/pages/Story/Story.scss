@@ -127,7 +127,8 @@
         letter-spacing: 2px;
         list-style-type: none;
         li {
-          color: $red;
+          color: lighten($red, 30%);
+          font-weight: 700;
           &::before {
             content: "— ";
           }

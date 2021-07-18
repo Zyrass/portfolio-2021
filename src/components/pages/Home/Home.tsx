@@ -54,7 +54,7 @@ function Home() {
 
         <div className="container__right">
           <figure>
-            <img src="/images/illustration-contact.png" alt=""x />
+            <img src="/images/illustration-contact.png" alt="" />
           </figure>
         </div>
       </div>

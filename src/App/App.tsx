@@ -15,6 +15,7 @@ function App() {
         <Switch>
           <Route path="/accueil" component={ Home } />
           <Route path="/story" component={ Story } />
+          <Route path="/project" render={ () => "<h1>A étiter Project</h1>" }/>
           <Redirect to="/accueil" />
         </Switch>
 

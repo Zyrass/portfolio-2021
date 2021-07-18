@@ -5,9 +5,9 @@ import VanillaTilt from 'vanilla-tilt';
 // SCSS
 import "./Presentation.scss"
 
-function Tilt(props) {
+function Tilt(props: any) {
   const { options, ...rest } = props;
-  const tilt = useRef(null)
+  const tilt = useRef(null as any)
 
   useEffect( () => {
     VanillaTilt.init(tilt.current, options);
@@ -56,7 +56,7 @@ function Presentation() {
             A 37 ans et pour mener à bien cette reconversion,<br /><em>je suis inscris sur plusieurs plateformes d'E-learning</em>.<br /><br />
 
             Je me forme essentiellement autour de l'écho-système <em>JavaScript</em><br />
-            (<em>React</em>, <em>NodeJS</em>, <em>NextJs</em>, <em>VueJs</em> ).<br /><br />
+            (<em>React</em>, <em>NodeJS</em>, <em>NextJs</em>, <em>VueJs</em>, <em>GraphQL</em> ).<br /><br />
             J'ai tout de même une certaine curiosité pour les technologies concurente...<br /> (<em>Symfony</em>, <em>Laravel</em>, <em>Python</em>).
           </p>
           <button className="btn">

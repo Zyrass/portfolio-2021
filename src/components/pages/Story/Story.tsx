@@ -11,13 +11,13 @@ function Story() {
   const [asideStatus] = useState(true);
 
   // Méthodes
-  const addQuality = textQuality => {
-    // à éditer...
+  const addQuality = (textQuality: string) => {
+    console.log( textQuality )
   }
 
   const closePanel = () => {
-    const asideContent = document.querySelector(".aside__content");
-    asideContent.classList.toggle("visibility");
+    // const asideContentHTML: Element | null = document.querySelector(".aside__content");
+    // asideContentHTML.classList.toggle("visibility");
   }
 
   return (

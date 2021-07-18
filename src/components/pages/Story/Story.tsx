@@ -1,5 +1,5 @@
 // Dépendances
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 
 // SCSS
 import "./Story.scss"
@@ -7,18 +7,26 @@ import "./Story.scss"
 function Story() {
 
   // Etats
-  // const [qualities] = useState([]);
-  const [asideStatus] = useState(true);
+  const [qualities, setQualities] = useState<string[]>([]);
+  const [asideStatus, setAsideStatus] = useState(true);
+
+  // Effets
+  useEffect(() => {
+
+    console.log( {qualities} )
+
+  }, [qualities])
 
   // Méthodes
-  const addQuality = (textQuality: string) => {
-    console.log( textQuality )
+  const addQuality = ( textQuality: string ): void  => {
+    setQualities( prevQualities => [...qualities, textQuality])
   }
 
-  const closePanel = () => {
-    // const asideContentHTML: Element | null = document.querySelector(".aside__content");
-    // asideContentHTML.classList.toggle("visibility");
+  const clearQualities = ($e: any) => {
+    $e.preventDefault()
+    setQualities( [] );
   }
+
 
   return (
     <Fragment>
@@ -454,7 +462,12 @@ function Story() {
       </div>{/* end containter__about */}
     
       <aside className="container__aside">
-        <span onClick={ closePanel }>&times;</span>
+        <span 
+          onClick={ () => setAsideStatus( !asideStatus ) }
+          style={{
+            right: asideStatus ? "432px" : "0px",
+          }}
+        >&times;</span>
         
         { 
           asideStatus && (
@@ -463,16 +476,17 @@ function Story() {
               <p>Ci-dessous, découvrez un résumé des qualités que j'ai acquis avec le temps.</p>
 
               <ul>
-                {/* {
-                  qualities.map( (data, index) => {
+                {
+                  qualities.length > 0 && qualities.map( (data, index) => (
                     <li key={index}>{ data }</li>
-                  })
-                } */}
+                  ))
+                }
               </ul>
 
               <button
                 type="button"
                 className="btn"
+                onClick = {  clearQualities }
               >
                 Vider la liste
               </button>

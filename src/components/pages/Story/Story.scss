@@ -2,7 +2,7 @@
 
 .container__about {
   min-height: calc(100vh - 64px);
-  background-color: $white;
+  background-color: darken($white, 20%);
   box-shadow: inset 0 0 200px $dark;
   display: flex;
   flex-direction: column;
@@ -49,6 +49,7 @@
 
       span {
         color: crimson;
+        font-weight: 700;
         cursor: pointer;
       }
     }
@@ -80,6 +81,7 @@
     opacity: 0.9;
     border-bottom: 2px solid;
     padding-bottom: 20px;
+    text-transform: uppercase;
   }
 
 }
@@ -89,7 +91,6 @@
     span {
       position: fixed;
       top: 100px;
-      right: 350px;
       z-index: 1;
       font-size: 20px;
       background-color: $dark;
@@ -99,6 +100,7 @@
       font-weight: 700;
       cursor: pointer;
       box-shadow: -1px 0 2px $dark;
+      transition: right 0.5 ease-in-out;
     }
 
     .aside__content {
@@ -116,7 +118,6 @@
       p {
         color: $white;
         letter-spacing: 1.8px;
-        text-align: left;
         margin: 20px 0;
       }
 

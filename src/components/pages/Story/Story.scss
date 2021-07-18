@@ -2,7 +2,7 @@
 
 .container__about {
   min-height: calc(100vh - 64px);
-  background-color: darken($white, 20%);
+  background-color: $white;
   box-shadow: inset 0 0 200px $dark;
   display: flex;
   flex-direction: column;

@@ -7,8 +7,8 @@ import "./Story.scss"
 function Story() {
 
   // Etats
-  const [qualities, setQualities] = useState([]);
-  const [asideStatus, setAsideStatus] = useState(true);
+  const [qualities] = useState([]);
+  const [asideStatus] = useState(true);
 
   // Méthodes
   const addQuality = textQuality => {
@@ -463,11 +463,11 @@ function Story() {
               <p>Ci-dessous, découvrez un résumé des qualités que j'ai acquis avec le temps.</p>
 
               <ul>
-                {
+                {/* {
                   qualities.map( (data, index) => {
                     <li key={index}>{ data }</li>
                   })
-                }
+                } */}
               </ul>
 
               <button

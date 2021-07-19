@@ -1,9 +1,10 @@
+import '../../assets/styles/_color.scss'
 import { jsPDF } from "jspdf";
 import moiJPG from "./moi.jpg";
 
 const generate = () => {
     let pdf = new jsPDF();
-    pdf.setLanguage("fr")
+    pdf.setLanguage("fr-FR")
     
     console.log(pdf);
     // -------------------------------------------------------------- Photo
@@ -24,8 +25,8 @@ const generate = () => {
     // ----------------------------------------- Text "Développeur Front Junior"
     pdf.setFontSize(28);
     pdf.setFont("Montserrat", "italic");
-    // pdf.setTextColor(254, 128, 182);
-    pdf.setTextColor(254, 128, 182);
+    // pdf.setTextColor(153, 17, 231);
+    pdf.setTextColor(153, 17, 231);
     pdf.text(75, 50, "Développeur Front/Back Junior");
     
     // -------------------------------------------------------------- Adresse
@@ -40,8 +41,8 @@ const generate = () => {
     
     // ----------------------------------------------------------- Bande profile
     pdf.setDrawColor(0);
-    // pdf.setFillColor(254, 128, 182);
-    pdf.setFillColor(254, 128, 182);
+    // pdf.setFillColor(153, 17, 231);
+    pdf.setFillColor(153, 17, 231);
     pdf.rect(0, 70, 210, 30, "FD");
     
     // ------------------------------------------------------ Text dans la bande
@@ -66,12 +67,12 @@ const generate = () => {
     pdf.rect(0, 100, 70, 90, "FD");
     pdf.setFontSize(18);
     pdf.setFont("Montserrat", "bold");
-    pdf.setTextColor(254, 128, 182);
+    pdf.setTextColor(153, 17, 231);
     pdf.text(45, 110, "Contact");
-    pdf.setDrawColor(254, 128, 182);
+    pdf.setDrawColor(153, 17, 231);
     pdf.line(10, 115, 70, 115);
     pdf.setFontSize(11);
-    pdf.setTextColor(254, 128, 182);
+    pdf.setTextColor(153, 17, 231);
     pdf.text(5, 123, "Website");
     pdf.text(5, 128, "E-mail");
     pdf.text(5, 133, "Phone");
@@ -93,12 +94,12 @@ const generate = () => {
     pdf.rect(0, 155, 70, 90, "FD");
     pdf.setFontSize(18);
     pdf.setFont("Montserrat", "bold");
-    pdf.setTextColor(254, 128, 182);
+    pdf.setTextColor(153, 17, 231);
     pdf.text(7, 165, "Technologies utilisés");
-    pdf.setDrawColor(254, 128, 182);
+    pdf.setDrawColor(153, 17, 231);
     pdf.line(10, 170, 70, 170);
     pdf.setFontSize(12);
-    pdf.setTextColor(254, 128, 182);
+    pdf.setTextColor(153, 17, 231);
     // pdf.setFontType("bold");
     
     // -------------------------------------------------------------- Skills
@@ -141,9 +142,9 @@ const generate = () => {
     pdf.rect(0, 245, 70, 65, "FD");
     pdf.setFontSize(18);
     // pdf.setFontType("bold");
-    pdf.setTextColor(254, 128, 182);
+    pdf.setTextColor(153, 17, 231);
     pdf.text(20, 255, "Centre d'intérêts");
-    pdf.setDrawColor(254, 128, 182);
+    pdf.setDrawColor(153, 17, 231);
     pdf.line(10, 260, 70, 260);
     pdf.setFontSize(12);
     // pdf.setFontType("normal");
@@ -171,7 +172,7 @@ const generate = () => {
     pdf.setFontSize(14);
     // pdf.setFontType("bold");
     // pdf.setTextColor(50);
-    pdf.setTextColor(254, 128, 182);
+    pdf.setTextColor(153, 17, 231);
     pdf.text(80, 123, "3W Academy");
     pdf.setFontSize(12);
     // pdf.setFontType("normal");
@@ -191,8 +192,8 @@ const generate = () => {
     pdf.setFontSize(14);
     // pdf.setFontType("bold");
     // pdf.setTextColor(50);
-    // pdf.setTextColor(254, 128, 182);
-    pdf.setTextColor(254, 128, 182);
+    // pdf.setTextColor(153, 17, 231);
+    pdf.setTextColor(153, 17, 231);
     pdf.text(80, 148, "3W Academy");
     pdf.setFontSize(12);
     // pdf.setFontType("normal");
@@ -220,7 +221,7 @@ const generate = () => {
     pdf.setFontSize(12);
     // pdf.setFontType("bold");
     // pdf.setTextColor(255, 0, 0);
-    pdf.setTextColor(254, 128, 182);
+    pdf.setTextColor(153, 17, 231);
     pdf.text(80, 185, "Docstring");
     pdf.setFontSize(14);
     // pdf.setFontType("normal");
@@ -239,7 +240,7 @@ const generate = () => {
     pdf.setFontSize(12);
     // pdf.setFontType("bold");
     // pdf.setTextColor(0, 0, 155);
-    pdf.setTextColor(254, 128, 182);
+    pdf.setTextColor(153, 17, 231);
     pdf.text(80, 205, "Dyma");
     pdf.setFontSize(14);
     // pdf.setFontType("normal");
@@ -260,7 +261,7 @@ const generate = () => {
     pdf.setFontSize(12);
     // pdf.setFontType("bold");
     // pdf.setTextColor(155, 0, 155);
-    pdf.setTextColor(254, 128, 182);
+    pdf.setTextColor(153, 17, 231);
     pdf.text(80, 233, "OpenClassRooms");
     pdf.setFontSize(14);
     // pdf.setFontType("normal");
@@ -280,7 +281,7 @@ const generate = () => {
     pdf.setFontSize(14);
     // pdf.setFontType("bold");
     // pdf.setTextColor(0, 100, 0);
-    pdf.setTextColor(254, 128, 182);
+    pdf.setTextColor(153, 17, 231);
     pdf.text(80, 258, "Udemy");
     pdf.setFontSize(12);
     // pdf.setFontType("normal");
@@ -300,7 +301,7 @@ const generate = () => {
     pdf.setFontSize(14);
     // pdf.setFontType("bold");
     // pdf.setTextColor(255, 50, 0);
-    pdf.setTextColor(254, 128, 182);
+    pdf.setTextColor(153, 17, 231);
     pdf.text(80, 283, "3W Academy");
     pdf.setFontSize(12);
     // pdf.setFontType("normal");

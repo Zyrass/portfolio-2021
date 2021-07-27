@@ -1,4 +1,4 @@
-import '../../assets/styles/_color.scss'
+import '../../Assets/styles/_color.scss'
 import { jsPDF } from "jspdf";
 import moiJPG from "./moi.jpg";
 

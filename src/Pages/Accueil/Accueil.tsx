@@ -1,21 +1,39 @@
 // Dépendances
-import React, { Fragment } from "react"
+import React from "react"
+import styled from "styled-components";
 
 // Composants
-import Presentation from "./section/Presentation"
+import Presentation from "./Presentation/Presentation";
 
-// Scss
-import "./Home.scss"
+// Styled Components
+const StyledDivContainerOdd = styled.div`
+  margin-top: 0;
+  min-height: calc(100vh - 65px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: ${(props:any) => props.theme.backgroundColor };
+`;
+const StyledDivContainerEven = styled.div`
+  margin-top: 0;
+  min-height: calc(100vh - 65px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: ${(props:any) => props.theme.secondary };
+`;
 
-function Home() {
+function Accueil() {
   return(
-    <Fragment>
-      <div className="container">
+    <React.Fragment>
+      <StyledDivContainerOdd>
         <Presentation />
-      </div>
+      </StyledDivContainerOdd>
 
       {/* A propos */}
-      <div className="container">
+      <StyledDivContainerEven>
         <div className="container__left">
           <h3>Title</h3>
           <p>
@@ -33,7 +51,7 @@ function Home() {
         </div>
 
         <div className="container__clippath"></div>
-      </div>
+      </StyledDivContainerEven>
 
       {/* Contact */}
       <div className="container">
@@ -59,8 +77,8 @@ function Home() {
         </div>
       </div>
 
-    </Fragment>
+    </React.Fragment>
   )
 }
 
-export default Home
+export default Accueil

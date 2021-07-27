@@ -1,10 +1,12 @@
-import BtnGenerateCV from "../BtnGenerateCV/BtnGenerate"
+// Dependancies
+import BtnGenerateCV from "../../Utils/BtnGenerateCV/BtnGenerate";
+
+// SCSS
 import "./Footer.scss"
 
 const Footer = () => {
   return(
     <footer>
-
       <div className="container__clippath"></div>
 
       <div className="container__top">

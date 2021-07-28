@@ -17,12 +17,12 @@ const StyledDivContainerOdd = styled.div`
 `;
 const StyledDivContainerEven = styled.div`
   margin-top: 0;
-  min-height: calc(100vh - 65px);
+  min-height: calc(50vh - 65px);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: ${(props:any) => props.theme.secondary };
+  background-color: #252525;
 `;
 
 function Accueil() {
@@ -32,30 +32,20 @@ function Accueil() {
         <Presentation />
       </StyledDivContainerOdd>
 
-      {/* A propos */}
+      {/*  */}
       <StyledDivContainerEven>
-        <div className="container__left">
-          <h3>Title</h3>
+        
+      </StyledDivContainerEven>
+
+      {/* Contact */}
+      <div className="container">
+        <h2>Contactez-moi</h2>
           <p>
           Passionné par le développement web, j'aime expérimenter, découvrir et apprendre des nouvelles technologies.<br /><br />
           
           Dans ce portfolio, je vais vous présenter mes compétences, mon parcours ainsi que mes principales intégrations et créations graphiques.<br /><br />
           Pour toute question, n’hésitez pas à me contacter :) 
           </p>
-        </div>
-        
-
-        <div className="container__right">
-          <h3>Title</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi explicabo, animi, impedit aperiam reiciendis labore libero, odit facere aliquid dolore provident suscipit qui. Sunt, explicabo!</p>
-        </div>
-
-        <div className="container__clippath"></div>
-      </StyledDivContainerEven>
-
-      {/* Contact */}
-      <div className="container">
-        <h2>Contactez-moi</h2>
 
         <div className="container__left" style={{
           backgroundColor: "white"

@@ -132,37 +132,37 @@ function Presentation() {
 
   return(
     <Fragment>
-        <div style={{padding: "30px", maxWidth: "50%"}}>
-          <StyledH1>Hello, moi c'est Alain.</StyledH1>
-          <StyledP>
-            Je suis en reconversion professionnel, mon ambition est d'être<br /> <StyledEm>un développeur fullstack</StyledEm>.<br/><br />
-            
-            A 37 ans et pour mener à bien cette reconversion,<br /><StyledEm>je suis inscris sur plusieurs plateformes d'E-learning</StyledEm>.<br /><br />
+      <div style={{padding: "30px", maxWidth: "50%"}}>
+        <StyledH1>Hello, moi c'est Alain.</StyledH1>
+        <StyledP>
+          Je suis en reconversion professionnel, avec pour ambition d'être<br /> <StyledEm>un développeur fullstack</StyledEm> dans un avenir plus ou moins proche.<br/><br />
+          
+          A 37 ans et pour mener à bien cette reconversion,<br /><StyledEm>je suis inscris sur plusieurs plateformes d'E-learning</StyledEm>.<br /><br />
 
-            Je me forme essentiellement autour de l'écho-système <StyledEm>JavaScript</StyledEm><br />
-            (<StyledEm>React</StyledEm>, <StyledEm>NodeJS</StyledEm>, <StyledEm>NextJs</StyledEm>, <StyledEm>VueJs</StyledEm>, <StyledEm>GraphQL</StyledEm> ).<br /><br />
-            J'ai tout de même une certaine curiosité pour les technologies concurente...<br /> (<StyledEm>Symfony</StyledEm>, <StyledEm>Laravel</StyledEm>, <StyledEm>Python</StyledEm>).
-          </StyledP>
+          Je me forme essentiellement autour de l'écho-système <StyledEm>JavaScript</StyledEm><br />
+          (<StyledEm>React</StyledEm>, <StyledEm>NodeJS</StyledEm>, <StyledEm>NextJs</StyledEm>, <StyledEm>VueJs</StyledEm>, <StyledEm>GraphQL</StyledEm> ).<br /><br />
+          J'ai tout de même une certaine curiosité pour les technologies concurente...<br /> (<StyledEm>Symfony</StyledEm>, <StyledEm>Laravel</StyledEm>, <StyledEm>Python</StyledEm>).
+        </StyledP>
 
-          <StyledA href="/project">Mes Projets</StyledA>
-          <StyledA href="/story">Ma story</StyledA>
-        </div>
+        <StyledA href="/project">Mes Projets</StyledA>
+        <StyledA href="/story">Ma story</StyledA>
+      </div>
 
-        <div className="container__right">
-          <StyledContainerRightFigure>
-            <Tilt options={options} >
-              <StyledContainerRightFigureImg 
-                src="/images/moi.jpg" 
-                alt="" 
-                // data-tilt 
-                // data-tilt-glare
-                // data-tilt-max-glare="0.8"
-              />
-            </Tilt>
-          </StyledContainerRightFigure>
-        </div>
+      <div className="container__right">
+        <StyledContainerRightFigure>
+          <Tilt options={options} >
+            <StyledContainerRightFigureImg 
+              src="/images/moi.jpg" 
+              alt="" 
+              // data-tilt 
+              // data-tilt-glare
+              // data-tilt-max-glare="0.8"
+            />
+          </Tilt>
+        </StyledContainerRightFigure>
+      </div>
 
-        <StyledContainerInfoDiv>
+      <StyledContainerInfoDiv>
             <StyledContainerInfoDivSpan>06.22.63.79.24</StyledContainerInfoDivSpan>
             <StyledContainerInfoDivAddress>Région Lyonnaise (Meyzieu 69330)</StyledContainerInfoDivAddress>
             <StyledContainerInfoDivSpan>alain.guillon.69330@outlook.fr</StyledContainerInfoDivSpan>

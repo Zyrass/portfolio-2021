@@ -12,11 +12,11 @@ const StyledH1      = styled.h1`
 `;
 const StyledP       = styled.p`
   text-align: justify;
-  font-size: calc(10px + 1vmin);
+  font-size: calc(10px + 1.3vmin);
   letter-spacing: 1.6px;
   max-width: 100%;
   color: ${(props:any) => props.theme.primary};
-  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+  filter: drop-shadow(1px 1px 3px rgba(0,0,0,1));
 `;
 const StyledEm      = styled.em`
   color: ${(props:any) => props.theme.secondary};

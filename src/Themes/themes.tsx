@@ -1,48 +1,48 @@
 export const darkTheme    = {
-  backgroundColor: "#252525",
-  textColor: "#252525",
-  primary: "#fbfbfb",
-  secondary: "#fcff17"
+  backgroundColor: "#1f1f1f",
+  textColor: "#1f1f1f",
+  primary: "#ffffff",
+  secondary: "#feff6b"
 }
 
 export const brownTheme   = {
-  backgroundColor: "#7f4828",
-  textColor: "#7f4828",
-  primary: "#fbfbfb",
-  secondary: "#fcff17"
+  backgroundColor: "#4a2a17",
+  textColor: "#4a2a17",
+  primary: "#ffffff",
+  secondary: "#feff6b"
 }
 
 export const greenTheme   = {
-  backgroundColor: "#2b611c",
-  textColor: "#2b611c",
-  primary: "#fbfbfb",
-  secondary: "#fcff17"
+  backgroundColor: "#1d4113",
+  textColor: "#1d4113",
+  primary: "#ffffff",
+  secondary: "#feff6b"
 }
 
 export const blueTheme    = {
-  backgroundColor: "#253d73",
-  textColor: "#253d73",
-  primary: "#fbfbfb",
-  secondary: "#fcff17"
+  backgroundColor: "#172647",
+  textColor: "#172647",
+  primary: "#ffffff",
+  secondary: "#feff6b"
 }
 
 export const redTheme     = {
-  backgroundColor: "#b10001",
-  textColor: "#b10001",
-  primary: "#fbfbfb",
-  secondary: "#fcff17"
+  backgroundColor: "#810001",
+  textColor: "#810001",
+  primary: "#ffffff",
+  secondary: "#feff6b"
 }
 
 export const purpleTheme  = {
-  backgroundColor: "#81329c",
-  textColor: "#81329c",
-  primary: "#fbfbfb",
-  secondary: "#fcff17"
+  backgroundColor: "#3e144c",
+  textColor: "#3e144c",
+  primary: "#ffffff",
+  secondary: "#feff6b"
 }
 
 export const pinkTheme    = {
-  backgroundColor: "#ab0057",
-  textColor: "#ab0057",
-  primary: "#fbfbfb",
-  secondary: "#fcff17"
+  backgroundColor: "#7d0040",
+  textColor: "#7d0040",
+  primary: "#ffffff",
+  secondary: "#feff6b"
 }

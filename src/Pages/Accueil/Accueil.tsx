@@ -4,11 +4,14 @@ import styled from "styled-components";
 
 // Composants
 import Presentation from "./Presentation/Presentation";
+import Services from "./Services/Services";
+import Parcours from "./Parcours/Parcours";
+import Techno from "./Techno/Techno";
+
 
 // Styled Components
 const StyledDivContainerOdd = styled.div`
   margin-top: 0;
-  min-height: calc(100vh - 65px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,13 +31,27 @@ const StyledDivContainerEven = styled.div`
 function Accueil() {
   return(
     <React.Fragment>
-      <StyledDivContainerOdd>
+      <StyledDivContainerOdd style={{
+        minHeight: "calc(100vh - (65px + 42px))"
+      }}>
         <Presentation />
       </StyledDivContainerOdd>
 
       {/*  */}
       <StyledDivContainerEven>
-        
+        <Services />
+      </StyledDivContainerEven>
+
+      {/*  */}
+      <StyledDivContainerOdd style={{
+        margin: 0
+      }}>
+        <Parcours />
+      </StyledDivContainerOdd>
+
+      {/*  */}
+      <StyledDivContainerEven>
+        <Techno />
       </StyledDivContainerEven>
 
       {/* Contact */}

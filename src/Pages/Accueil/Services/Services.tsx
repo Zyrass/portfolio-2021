@@ -2,7 +2,7 @@
 import React from "react";
 import styled from "styled-components";
 
-function Techno() {
+function Services() {
   return (
     <React.Fragment>
 
@@ -23,4 +23,4 @@ function Techno() {
   )
 }
 
-export default Techno;
+export default Services;

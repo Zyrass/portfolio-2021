@@ -13,7 +13,7 @@ const StyledNav = styled.nav`
   z-index: 10;
   position: sticky;
   top: 0;
-  background-color: #252525;
+  background-color: #151515
   height: 65px;
   border-bottom: 1px solid ${(props:any)=> props.theme.secondary};
   display: flex;

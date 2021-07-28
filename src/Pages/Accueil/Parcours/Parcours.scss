@@ -1,43 +1,51 @@
-@import '../../Assets/styles/color';
+@import '../../../Assets/styles/color';
 
-footer {
-  grid-area: footer;
+section {
+  grid-area: section;
+  min-width: 100vw;
   height: 550px;
   padding-top: 70px;
-  background-color: $dark;
+  background-color: transparent;
   color: $white;
-  position: relative;
   display: flex;
   flex-direction: column;
   position: relative;
 
   .container__clippath {
-    position: absolute;
-    top: -100px;
-    left: 0;
+    position: relative;
     min-width: 100%;
     height: 100px;
     z-index: 5;
-    background-color: $dark;
-    clip-path: polygon(0 0, 100% 100%, 100% 100%, 0% 100%);
+    background-color: #ffffff;
+    left: 0;
+    &_top {
+      top: -70px;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%);
+    }
+    &_bottom {
+      top: 100px;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
+    }
   }
 
   .container__top {
     grid-area: container_top;
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-row: 1fr;
     grid-area: 
-      "left middle right"
+      "date middle right"
     ;
+
     display: flex;
     justify-content: center;
     align-items: flex-start;
   }
 
   .left {
-    grid-area: left;
-    min-width: calc(20% - 20px);
+    grid-area: date;
+    margin-left: 0;
   }
   .middle {
     width: 50%;
@@ -72,7 +80,7 @@ footer {
   }
   .right {
     grid-area: right;
-    min-width: calc(30% - 20px);
+    margin-right: 0;
   }
 
   .container__bottom {
@@ -85,8 +93,8 @@ footer {
     line-height: 60px;
     display: flex;
     justify-content: space-evenly;
-    background-color: #151515;
-    border-top: 2px solid $secondary;
+    background-color: darken($dark, 5);
+    border-top: 1px solid rgba(254, 128, 182, 0.9);
 
     span {
       a {
@@ -98,6 +106,17 @@ footer {
       }
     }
   }
+}
+
+h3 {
+  color: $red;
+  font-size: 2em;
+  border-bottom: 2px solid $red;
+  padding-bottom: 20px;
+  max-width: 80%;
+  margin: 40px auto;
+  text-align: center;
+  min-width: 80%;
 }
 
 .left,
@@ -118,10 +137,10 @@ footer {
         color: $white;
         padding: 2px 0 2px 25px;
         &.router-link-exact-active {
-          color: $secondary;
+          color: $purple;
         }
         &:hover {
-          color: $secondary;
+          color: $red;
         }
       }
     }

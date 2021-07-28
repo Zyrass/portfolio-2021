@@ -2,9 +2,18 @@ import '../../Assets/styles/_color.scss'
 import { jsPDF } from "jspdf";
 import moiJPG from "./moi.jpg";
 
+const selectColor = () => {
+    const bgColor = window.getComputedStyle(document.body, null).backgroundColor;
+    console.log({ "background-color": bgColor});
+    return bgColor;
+}
+
 const generate = () => {
     let pdf = new jsPDF();
     pdf.setLanguage("fr-FR")
+    
+    const jaune = "rgb(254, 255, 107)";
+    const white = "rgb(255, 255, 255)";
     
     console.log(pdf);
     // -------------------------------------------------------------- Photo
@@ -25,8 +34,7 @@ const generate = () => {
     // ----------------------------------------- Text "Développeur Front Junior"
     pdf.setFontSize(28);
     pdf.setFont("Montserrat", "italic");
-    // pdf.setTextColor(153, 17, 231);
-    pdf.setTextColor(153, 17, 231);
+    pdf.setTextColor(jaune);
     pdf.text(75, 50, "Développeur Front/Back Junior");
     
     // -------------------------------------------------------------- Adresse
@@ -41,23 +49,23 @@ const generate = () => {
     
     // ----------------------------------------------------------- Bande profile
     pdf.setDrawColor(0);
-    // pdf.setFillColor(153, 17, 231);
-    pdf.setFillColor(153, 17, 231);
+    // pdf.setFillColor(selectColor());
+    pdf.setFillColor(selectColor());
     pdf.rect(0, 70, 210, 30, "FD");
     
     // ------------------------------------------------------ Text dans la bande
-    pdf.setTextColor(50);
+    pdf.setTextColor(white);
     pdf.setFontSize(12);
-    let text = `En reconversion professionnel, j'ai pour ambition de devenir un 
-    développeur fullstack. Je reste débutant mais à 37 ans et pour mener à bien
-    cette reconversion, je suis inscris sur plusieurs plateformes d'E-learning.
-    Je me forme essentiellement autour de l'écho-système JavaScript.`;
+    let text = `\tEn reconversion professionnel, j'ai pour ambition de devenir 
+        développeur fullstack. A 37 ans et pour mener à bien cette reconversion, 
+        je me suis inscris sur plusieurs plateformes d'E-learning.
+        Je me forme essentiellement autour de l'écho-système JavaScript.`;
     pdf.text(60, 78, text);
     
     // --------------------------------------------- Titre Profile Professionnel
     pdf.setFontSize(16);
     pdf.setFont("helvetica", "bold");
-    pdf.setTextColor(0);
+    pdf.setTextColor(jaune);
     pdf.text(5, 83, "PROFIL");
     pdf.text(5, 89, "PROFESIONNEL");
     
@@ -67,12 +75,12 @@ const generate = () => {
     pdf.rect(0, 100, 70, 90, "FD");
     pdf.setFontSize(18);
     pdf.setFont("Montserrat", "bold");
-    pdf.setTextColor(153, 17, 231);
+    pdf.setTextColor(jaune);
     pdf.text(45, 110, "Contact");
-    pdf.setDrawColor(153, 17, 231);
+    pdf.setDrawColor(jaune);
     pdf.line(10, 115, 70, 115);
     pdf.setFontSize(11);
-    pdf.setTextColor(153, 17, 231);
+    pdf.setTextColor(jaune);
     pdf.text(5, 123, "Website");
     pdf.text(5, 128, "E-mail");
     pdf.text(5, 133, "Phone");
@@ -80,7 +88,7 @@ const generate = () => {
     pdf.text(5, 143, "Situation");
     pdf.text(5, 148, "Enfants");
     pdf.setFontSize(10);
-    pdf.setTextColor(255);
+    pdf.setTextColor(white);
     pdf.text(22, 123, "http://alain-guillon.fr");
     pdf.text(22, 128, "alain.guillon.69330@outlook.fr");
     pdf.text(22, 133, "06.22.63.79.24");
@@ -94,15 +102,15 @@ const generate = () => {
     pdf.rect(0, 155, 70, 90, "FD");
     pdf.setFontSize(18);
     pdf.setFont("Montserrat", "bold");
-    pdf.setTextColor(153, 17, 231);
+    pdf.setTextColor(jaune);
     pdf.text(7, 165, "Technologies utilisés");
-    pdf.setDrawColor(153, 17, 231);
+    pdf.setDrawColor(jaune);
     pdf.line(10, 170, 70, 170);
     pdf.setFontSize(12);
-    pdf.setTextColor(153, 17, 231);
-    // pdf.setFontType("bold");
     
     // -------------------------------------------------------------- Skills
+    pdf.setTextColor(jaune);
+    // pdf.setFontType("bold");
     pdf.text(5, 178, "HTML, CSS");
     pdf.text(5, 183, "SASS, JS");
     pdf.text(5, 188, "REACT");
@@ -117,11 +125,11 @@ const generate = () => {
     pdf.text(5, 233, "Stack MERN");
     pdf.text(5, 238, "Stack MEVN");
     
+    // -------------------------------------------------------------- front
     pdf.setFontSize(13);
-    pdf.setTextColor(255);
+    pdf.setTextColor(white);
     // pdf.setFontType("italic");
     
-    // -------------------------------------------------------------- front
     pdf.text(45, 178, "*********");  // HTML CSS
     pdf.text(45, 183, "******");     // SASS JS
     pdf.text(45, 188, "******");     // REACT
@@ -142,13 +150,13 @@ const generate = () => {
     pdf.rect(0, 245, 70, 65, "FD");
     pdf.setFontSize(18);
     // pdf.setFontType("bold");
-    pdf.setTextColor(153, 17, 231);
+    pdf.setTextColor(jaune);
     pdf.text(20, 255, "Centre d'intérêts");
-    pdf.setDrawColor(153, 17, 231);
+    pdf.setDrawColor(jaune);
     pdf.line(10, 260, 70, 260);
     pdf.setFontSize(12);
     // pdf.setFontType("normal");
-    pdf.setTextColor(255);
+    pdf.setTextColor(white);
     pdf.text(5, 270, "> Plateforme d'E-learning");
     pdf.text(5, 275, "> Football -");
     pdf.text(5, 280, "> Cinéma");
@@ -172,7 +180,7 @@ const generate = () => {
     pdf.setFontSize(14);
     // pdf.setFontType("bold");
     // pdf.setTextColor(50);
-    pdf.setTextColor(153, 17, 231);
+    pdf.setTextColor(selectColor());
     pdf.text(80, 123, "3W Academy");
     pdf.setFontSize(12);
     // pdf.setFontType("normal");
@@ -192,8 +200,8 @@ const generate = () => {
     pdf.setFontSize(14);
     // pdf.setFontType("bold");
     // pdf.setTextColor(50);
-    // pdf.setTextColor(153, 17, 231);
-    pdf.setTextColor(153, 17, 231);
+    // pdf.setTextColor(selectColor());
+    pdf.setTextColor(selectColor());
     pdf.text(80, 148, "3W Academy");
     pdf.setFontSize(12);
     // pdf.setFontType("normal");
@@ -221,7 +229,7 @@ const generate = () => {
     pdf.setFontSize(12);
     // pdf.setFontType("bold");
     // pdf.setTextColor(255, 0, 0);
-    pdf.setTextColor(153, 17, 231);
+    pdf.setTextColor(selectColor());
     pdf.text(80, 185, "Docstring");
     pdf.setFontSize(14);
     // pdf.setFontType("normal");
@@ -240,7 +248,7 @@ const generate = () => {
     pdf.setFontSize(12);
     // pdf.setFontType("bold");
     // pdf.setTextColor(0, 0, 155);
-    pdf.setTextColor(153, 17, 231);
+    pdf.setTextColor(selectColor());
     pdf.text(80, 205, "Dyma");
     pdf.setFontSize(14);
     // pdf.setFontType("normal");
@@ -261,7 +269,7 @@ const generate = () => {
     pdf.setFontSize(12);
     // pdf.setFontType("bold");
     // pdf.setTextColor(155, 0, 155);
-    pdf.setTextColor(153, 17, 231);
+    pdf.setTextColor(selectColor());
     pdf.text(80, 233, "OpenClassRooms");
     pdf.setFontSize(14);
     // pdf.setFontType("normal");
@@ -281,7 +289,7 @@ const generate = () => {
     pdf.setFontSize(14);
     // pdf.setFontType("bold");
     // pdf.setTextColor(0, 100, 0);
-    pdf.setTextColor(153, 17, 231);
+    pdf.setTextColor(selectColor());
     pdf.text(80, 258, "Udemy");
     pdf.setFontSize(12);
     // pdf.setFontType("normal");
@@ -301,7 +309,7 @@ const generate = () => {
     pdf.setFontSize(14);
     // pdf.setFontType("bold");
     // pdf.setTextColor(255, 50, 0);
-    pdf.setTextColor(153, 17, 231);
+    pdf.setTextColor(selectColor());
     pdf.text(80, 283, "3W Academy");
     pdf.setFontSize(12);
     // pdf.setFontType("normal");
@@ -317,6 +325,7 @@ const generate = () => {
 }
 
 const BtnGenerate = () => {
+    selectColor();
     return( 
         <img
             title="le fichier sera télécharger au format PDF"

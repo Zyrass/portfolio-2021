@@ -20,6 +20,10 @@ const StyledH3 = styled.h3`
 const StyledEm = styled.em`
   color: ${(props:any) => props.theme.secondary};
 `;
+const StyledSpanColorHearts = styled.span`
+  color: ${(props:any) => props.theme.secondary};
+  font-size: calc(10px + 2vmin);
+`;
 
 const Footer = () => {
   return(
@@ -41,7 +45,7 @@ const Footer = () => {
           <StyledH3>Télécharger Mon CV &ndash; ( pdf )</StyledH3>
           <div className="content">
             <p>
-              Inspiré d'un CV trouvé sur google,<br/><StyledEm>je l'ai ré-écris entièrement en JavaScript avec le librairie jsPDF</StyledEm>.<br /><br />Ainsi, cliquez simplement sur la représentation du CV pour générer celui-ci au format PDF.
+              Inspiré d'un CV trouvé sur google,<br/><StyledEm>je l'ai ré-écris entièrement en JavaScript avec le librairie jsPDF</StyledEm>.<br /><br />Ainsi, cliquez simplement sur la représentation du CV pour générer celui-ci au format PDF.<br /><StyledEm>Il sera adapté à la couleur du theme selectionné.</StyledEm>
             </p>
             <figure>
               <BtnGenerateCV />
@@ -55,9 +59,9 @@ const Footer = () => {
             <li>Ma famille</li>
             <li>La famille Vigoureux</li>
             <li>La 3W Academy</li>
-            <li>Les communautés sur discord</li>
+            <li>Mon petit groupe d'amis sur discord</li>
             <li>Erwan et Quentin sur Dyma.fr</li>
-            <li>Les formateurs que j'ai pu avoir</li>
+            <li>Les nombreux formateurs que j'ai eu</li>
           </ul>
         </div>
       </div>
@@ -66,38 +70,36 @@ const Footer = () => {
         <span>&copy; Copyright 2021</span>
         <span>&#128241; 06.22.63.79.24</span>
         <span>
-            <a
-              href="https://www.linkedin.com/in/alain-guillon-22b3b4b6/"
+            <Link
+              to="https://www.linkedin.com/in/alain-guillon-22b3b4b6/"
               target="_blanck"
               className="link"
             >
               <img 
-                src="/images/linkedin.png" 
+                src={"/images/logo/linkedin.png"}
                 alt="Icon Github" 
                 width="25" 
               />
-            </a>
+            </Link>
 
-            <a href="https://github.com/Zyrass" target="_blanck" className="link">
+            <Link to="https://github.com/Zyrass" target="_blanck" className="link">
               <img 
-                src="/images/github.png" 
+                src={"/images/logo/github.png"}
                 alt="Icon Github" 
                 width="25" 
               />
-            </a>
-            <a href="https://gitlab.com/Zyrass" target="_blanck" className="link">
+            </Link>
+            <Link to="https://gitlab.com/Zyrass" target="_blanck" className="link">
               <img 
-                src="/images/gitlab.png" 
+                src={"/images/logo/gitlab.png"}
                 alt="Icon Gitlab" 
                 width="25"
                 onClick={() => BtnGenerateCV }
               />
-            </a>
+            </Link>
         </span>
         <span>Mentions Légales</span>
-        <span>Codé avec passion <span style={{
-            color: "red"
-        }}>♥ ♥ ♥</span></span>
+        <span>Codé avec passion <StyledSpanColorHearts>♥ ♥ ♥</StyledSpanColorHearts></span>
       </div>
     </footer>
   )

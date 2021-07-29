@@ -23,6 +23,10 @@ const GlobalStyle = createGlobalStyle`
     border-radius: 20px; /* roundness of the scroll thumb */
     border: 1px solid ${(props:any) => props.theme.primary};; /* creates padding around scroll thumb */
   }
+  ::selection {
+    background-color: ${(props:any) => props.theme.secondary};
+    color: #1f1f1f;
+  }
 `;
 
 function App() {

@@ -6,7 +6,8 @@ import styled from "styled-components";
 import Presentation from "./Presentation/Presentation";
 import Services from "./Services/Services";
 import Parcours from "./Parcours/Parcours";
-import Techno from "./Techno/Techno";
+// import Techno from "./TechnoUse/TechnoUse";
+import TechnoUse from "./TechnoUse/TechnoUse";
 
 
 // Styled Components
@@ -39,7 +40,7 @@ function Accueil() {
 
       {/*  */}
       <StyledDivContainerEven>
-        <Services />
+        <TechnoUse />
       </StyledDivContainerEven>
 
       {/*  */}
@@ -51,7 +52,7 @@ function Accueil() {
 
       {/*  */}
       <StyledDivContainerEven>
-        <Techno />
+        <Services />
       </StyledDivContainerEven>
 
       {/* Contact */}

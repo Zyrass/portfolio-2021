@@ -329,7 +329,7 @@ const BtnGenerate = () => {
     return( 
         <img
             title="le fichier sera télécharger au format PDF"
-            src="/images/cv-rose.png"
+            src="/images/cv.png"
             alt="représentation de mon CV"
             width="125"
             loading="lazy"

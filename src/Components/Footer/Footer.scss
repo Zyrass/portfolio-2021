@@ -38,6 +38,7 @@ footer {
   .left {
     grid-area: left;
     min-width: calc(20% - 20px);
+    padding-left: 100px;
   }
   .middle {
     width: 50%;
@@ -73,6 +74,7 @@ footer {
   .right {
     grid-area: right;
     min-width: calc(30% - 20px);
+    padding-right: 125px;
   }
 
   .container__bottom {

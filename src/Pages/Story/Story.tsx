@@ -332,39 +332,42 @@ function Story() {
               Nous avons réussi, un lourd combat en lui offrant presque 2 ans de
               plus quand l'hôpital
             </strong>
-            , ne il lui donnait que moins d'un an puis 3 jours...
+            , ne il lui donnait que moins d'un an... puis 3 jours...
             <br />
             <br />
             <strong>
               Pendant cette période j'ai continué à me former dans ce domaine
               (le web) tout en ayant une vigilence accrue pour ma fille.
             </strong>{" "}
-            J'ai même eu la chance de remplacer mon ancien formateur à la 3WA,
-            malgré tout ce que je vivais. Je remercie chaleureusement la 3WA qui
-            m'a donné cette chance de vivre de cette passion. J'ai donc été{" "}
+            J'ai même eu la chance de remplacer mon ancien formateur à la 3WA
+            malgré tout ce que je vivais.{" "}
+            <strong>Je remercie chaleureusement la 3WA</strong> qui m'a donné
+            cette chance de vivre de cette passion. J'ai donc été{" "}
             <span onClick={() => addQuality("J'ai été formateur")}>
               formateur
-            </span>
-            pour la session L13 début 2017.
-            <em>sur 14 élèves, 10 ont réussi leur QCM de fin de formation.</em>
+            </span>{" "}
+            pour la session L13 début 2017. <br />
+            <em>Sur 14 élèves, 10 ont réussi leur QCM de fin de formation.</em>
             <br />
             <br />
-            J'ai par la suite fait des petites pages assez simple en
+            J'ai par la suite fait des petites pages assez simple en tant qu'
             <span onClick={() => addQuality("J'ai été auto-entrepreneur")}>
               auto-entrepreneur
-            </span>
+            </span>{" "}
             pour des amis, le tout uniquement en local, en effet, ils n'avaient
             pas d'utilité à que ce soit en ligne.
             <em>
               Comme on le dit si bien,{" "}
               <span onClick={() => addQuality("A l'écoute du client")}>
                 le client est roi
-              </span>
+              </span>{" "}
               et nous nous plions à leurs volontés tout en les{" "}
               <span onClick={() => addQuality("Je peux conseiller")}>
                 conseillants
-              </span>
-              sur ce qu'il serait bien pour eux..
+              </span>{" "}
+              sur ce qu'il serait bien pour eux.. Et donc malgré une possibilité
+              d'accroitre leur visibilité sur internet ils ont refusé cette
+              étape.
             </em>
             <br />
             <br />
@@ -373,12 +376,12 @@ function Story() {
             peu gonflé.
             <br />
             <br />
-            Quand nous étions auprès d'elle, malheureusement
+            Quand nous étions auprès d'elle, à l'hôpital, malheureusement{" "}
             <strong>
-              elle a fait un arrêt cardiaque. Elle est partie rejoindre ce
+              elle a fait un arrêt cardiaque... Elle est partie rejoindre ce
               qu'elle a toujours été, un ange
-            </strong>
-            avec tout de même un très gros regret...
+            </strong>{" "}
+            avec tout de même un très gros regret...{" "}
             <em>
               A l'hôpital ils se sont arrêté sur un compte rendu datant de
               2017... où il était stipulé qu'il ne fallait surtout pas
@@ -390,7 +393,7 @@ function Story() {
                 médecins était stupéfait par sa courbe qui remontait en
                 flèche... mais le médecin n'a rien mentionné dans le dossier
                 médicale...
-              </strong>
+              </strong>{" "}
               Notre tord, c'est d'avoir fait confiance aveuglément et donc, de
               ne pas avoir insisté sur le faîte d'avoir un papier qui
               permettrait justement de prouver ce qui c'était dit dans ce bureau
@@ -404,19 +407,20 @@ function Story() {
         <section className="about__story2">
           <p>
             Là, vous vous en doutez c'est la descente aux enfer qui commence...
-            malgré ce drâme,
-            <em>
+            malgré ce drâme,{" "}
+            <strong>
               je n'avais pas le choix de garder la tête haute et j'ai accompagné
               ma fille jusqu'au bout.
-            </em>
-            , ma conjointe n'était que l'ombre d'elle même... Mes filles étaient
-            dévasté, je n'avais pas le droit de craqué et j'ai tenu.
+            </strong>
+            , ma conjointe n'était que l'ombre d'elle même (ce qui est tout a
+            fait logique)... Mes filles étaient dévasté, je n'avais pas le droit
+            de craqué et j'ai tenu.
             <br />
             <br />
             <strong>
               Ma princesse est malheureusement décédée le 25/11/2018
             </strong>
-            ,
+            ,{" "}
             <em>
               j'ai mis un peu plus d'un an pour faire en sorte que ma conjointe
               s'enlève toutes ces idées noire de la tête.
@@ -427,9 +431,9 @@ function Story() {
             <span onClick={() => addQuality("Caractère fort")}>caractère</span>.
             <br />
             <br />
-            Pour lui montrer que l'on pouvait avancer, et que de toutes manière,
-            quoi qu'il en soit pour nos deux autres filles nous devions allez de
-            l'avant.
+            Pour lui montrer que malgré ce drâme nous pouvions avancer et que de
+            toutes manière, quoi qu'il en soit pour nos deux autres filles nous
+            devions allez de l'avant.{" "}
             <strong>
               Ainsi, j'ai repris contact avec la 3WA pour leur faire part de
               cette triste nouvelle, la 3WA m'a permit de me relancer très
@@ -440,43 +444,46 @@ function Story() {
             Je suis quelqu'un d'assez{" "}
             <span onClick={() => addQuality("Je suis humble")}>humble</span>,
             mais j'avais une vision bien différente des élèves en difficulté que
-            mon cher collègue.
+            mon cher collègue.{" "}
             <em>
-              Je lui souhaite de réussir malgré que nous avons eu quelques
-              divergence, le meilleur.
-            </em>
-            En effet, ce formateur préférait continuer avec les personnes qui
-            comprenait plus où moins les choses, tout en délaissant
-            maladroitement les personnes qui avaient plus de mal.
+              ( Je lui souhaite le meilleur, malgré que nous avions eus quelques
+              désacords ).
+            </em>{" "}
+            En effet, ce formateur préférait continuer avec les seules personnes
+            qui comprenait plus où moins ce qu'il expliquait, tout en délaissant
+            maladroitement les personnes qui avaient malheureusement plus de
+            mal.
           </p>
 
           <p>
-            J'ai montré l'exemple à ma femme, mais elle n'y arrivait pas. J'ai
-            donc mis ma vie de côté afin que mes enfants, ma conjointe puisse à
-            nouveau allez de l'avant.
+            Bref, tout ça pour dire que j'ai montré l'exemple à ma femme, mais
+            elle n'y arrivait pas. J'ai donc mis ma vie de côté afin que mes
+            enfants, ma conjointe puisse à nouveau allez de l'avant.{" "}
             <strong>
               C'est un très gros{" "}
               <span onClick={() => addQuality("Je me sacrifie")}>
                 sacrifice
-              </span>
-              que j'ai fais mais je ne regretterai jamais ce choix, il en
-              vallait la peine.
+              </span>{" "}
+              que j'ai fais, mais, je ne regretterai jamais ce choix, il en
+              vallait grandement la peine.
             </strong>
             <br />
             <br />
             Aujourd'hui des personnes me critique (
-            <em>surtout mon voisinage</em>), sur le faîte que je ne travail
-            pas... Mais je n'ai rien a leurs prouver, je connais mes valeurs et
-            je sais ce que je fais de mes journée et je sais ce que je veux.
+            <em>surtout mon voisinage</em>), sur le faîte que je ne travail pas,
+            pour eux, je passe mes journées à glander... Mais de base, je n'ai
+            rien à leurs prouver, je connais mes valeurs et je sais ce que je
+            fais de mes journées et je sais ce que je veux.
           </p>
 
           <p>
-            Pour réussir, je me forme comme je l'ai déjà dis constament, J'ai
-            pour plus de 1000€ de formation sur udemy, j'ai passé plus de 400h
-            sur Dyma.fr, j'ai cette{" "}
+            Pour réussir, je me forme comme je l'ai déjà dis constament, j'ai
+            déjà suivi <strong>11 plateformes d'e-learning</strong>, j'ai un peu
+            plus de 120 formations sur udemy, j'ai passé déjà plus de 420h sur
+            la plateforme Dyma.fr, j'ai cette{" "}
             <span onClick={() => addQuality("Je suis curieux")}>curiosité</span>{" "}
             ou bien certaine personnes disent que j'ai une{" "}
-            <span onClick={() => addQuality("Addicte au code")}>addiction</span>
+            <span onClick={() => addQuality("Addicte au code")}>addiction</span>{" "}
             pour découvrir de nouvelles choses.
           </p>
 
@@ -484,46 +491,53 @@ function Story() {
             Mon{" "}
             <span onClick={() => addQuality("Je suis Ambitieux")}>
               ambition
-            </span>
-            elle est simple, ce que je veux avant tout c'est de décrocher un
+            </span>{" "}
+            elle très simple, ce que je veux avant tout c'est de décrocher un
             emploi, j'ai les compétences pour postuler en tant que
             <span onClick={() => addQuality("Je suis dev frontend")}>
               developpeur front
             </span>
-            . Mais, par la suite, j'aimerais accroître mes compétences pour
-            devenir développeur fullstack.
+            . Mais, j'ai également des compétences pour devenir développeur
+            fullstack en revanche je manque cruellement d'expérience dans ce
+            domaine pour prétendre ce statut.
             <br />
-            Et bien plus tard, je souhaiterais pouvoir former à nouveau des
+            <br />
+            Bien plus tard, je souhaiterais pouvoir former à nouveau des
             personnes sur les technologies du web moderne, bien entendu, sa ne
             pourra se faire tant que je n'aurais pas engrenger de l'expérience
-            professionnel.
-            <br />
-            <br />
-            A titre personnel j'aimerais dans un quelconque futur, ou si on m'en
-            donne l'oportunité, me former sur le côté back-end. J'ai découvert
-            NodeJS mais je manque cruellement de pratique, je me débrouille mais
-            il faut persévérer. J'ai besoin de renforcer mes acquis sur React ou
-            bien même en javascript natif malgré que je me débrouille assez
-            bien. J'apprends actuellement TypeScript, les tests unitaires
-            Symfony. Symfony, me permet de me replonger dans le PHP que j'ai mis
-            de côté depuis plus d'un an.
+            professionnel.{" "}
+            <em>
+              Même si j'ai déjà former des amis et membre de ma propre famille
+              dans quelques technologies...
+            </em>
+          </p>
+          <p>
+            A titre personnel j'aimerais dans un quelconque futur, ou si l'on
+            m'en donne l'oportunité, ma soif d'apprendre fait que j'aimerais
+            très franchement renforcer le back-end. J'ai besoin de renforcer mes
+            acquis sur React ou bien même en javascript natif malgré que je me
+            débrouille assez bien. J'apprends actuellement TypeScript, les tests
+            unitaires Symfony. Symfony, me permet de me replonger dans le PHP
+            que j'ai mis de côté depuis plus d'un an.
             <br />
             <br />
             Mais surtout, je veux obtenir cet emploi{" "}
-            <em>non pas pour faire taire les mauvaises langues</em>,
+            <em>non pas pour faire taire les mauvaises langues</em>,{" "}
             <strong>
               mais pour mettre en pratique ce que j'ai pu apprendre en
-              autodidacte depuis toutes ces années... mais surtout pour prendre
-              une revanche sur la vie qui ne m'aura pas épargné..
+              autodidacte depuis toutes ces années... On pourrait également dire
+              qu'il s'agirait d'une belle revanche sur la vie qui ne m'aura
+              malheureusement pas épargné..
             </strong>
           </p>
 
           <p>
             Je me répète c'est vrai, mais mon objectif est simple, je veux
-            devenir fullstack.
+            devenir <strong>fullstack</strong>.{" "}
             <em>
               Par exemple, ce portfolio a été créé en REACT, n'ayant aucune
-              expérience professionel, je me considère uniquement débutant.
+              expérience professionel, je me considère uniquement débutant
+              malgré les nombreuses features qui auront été développer.
             </em>
             <br />
             <br />
@@ -550,14 +564,47 @@ function Story() {
             <br />
             <br />
             Il faut dire que j'ai régulièrement le{" "}
-            <span onClick={() => addQuality("Je suis soutenu")}>soutien</span>
+            <span onClick={() => addQuality("Je suis soutenu")}>
+              soutien
+            </span>{" "}
             de plusieurs formateurs, développeurs, étudiants, amis mais le plus
-            important j'ai celui de ma famille.
+            important j'ai celui de ma famille.{" "}
             <em>
               Ce n'était pas évident d'obtenir celui-ci sachant qu'ils ne
               connaissent rien dans le métier.
-            </em>
+            </em>{" "}
             Aujourd'hui je l'ai et c'est pour moi le plus important.
+          </p>
+
+          <p>
+            Je m'appel <strong>Alain Guillon</strong>, ma story se termine
+            ici....{" "}
+            <em>
+              Si l'idée vous à plus d'apprendre à me connaître via cette
+              démarche en me mettant en quelques sorte à nue avec vous
+            </em>
+            , n'hésitez surtout pas à m'envoyer un mail.{" "}
+            <em>En revanche si au contraire vous n'avez pas aimez</em>, vous
+            êtes tout à fait libre de me le faire savoir également. Malgré mon
+            vécu je ne mords pas et je suis ouvert d'esprit.
+          </p>
+
+          <p>
+            Je vous remercie d'avoir réussi à lire jusqu'ici, je vous souhaite
+            le meilleure dans vos projets professionnel comme personnel.
+          </p>
+          <br />
+          <br />
+          <p
+            style={{
+              display: "flex",
+              justifyContent: "flex-end",
+            }}
+          >
+            <span style={{ paddingRight: "5px" }}>Alain Guillon</span>
+            <span>
+              <em> aussi connu sous le pseudo Zyrass</em>
+            </span>
           </p>
         </section>
       </div>
